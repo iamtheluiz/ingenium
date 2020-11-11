@@ -23,12 +23,20 @@ const ArticleContainer = styled.div`
     max-width: 780px;
   }
 
-  article * {
+  div,
+  table,
+  p,
+  img{
     width: 100%;
   }
 
+  table th,
+  table td {
+    padding: 0.5em 0.5em;
+  }
+
   /* Copy & Lists */
-  p {
+  p, center {
     line-height: 1.5rem;
     margin-top: 1.5rem;
     margin-bottom: 0;
@@ -80,6 +88,7 @@ const ArticleContainer = styled.div`
     margin-top: 1.5rem;
     margin-bottom: 0;
     line-height: 1.5rem;
+    width: 100%;
   }
 
   h1 {
@@ -106,19 +115,6 @@ const ArticleContainer = styled.div`
 
   h6 {
     font-size: 0.3535rem;
-  }
-
-  /* Tables */
-  table {
-    margin-top: 1.5rem;
-    border-spacing: 0px;
-    border-collapse: collapse;
-  }
-
-  table td,
-  table th {
-    padding: 0;
-    line-height: 33px;
   }
 
   /* Code blocks */
