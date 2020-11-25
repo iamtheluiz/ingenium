@@ -3,7 +3,7 @@ title: 'Diagrama de Ishikawa'
 subtitle: 'Como gerenciar o desenvolvimento de sistemas informatizados?'
 description: 'A finalidade do presente artigo é introduzir o leitor ao conceito de metodologias de desenvolvimento e demonstrar quais são os pontos que devem ser observados ao trabalhar em um projeto'
 cover: 'https://lean.blog.br/wp-content/uploads/2018/10/DIAGRAMA-DE-CAUSA-E-EFEITO.jpg'
-date: '2020-11-08'
+date: '2020-11-01'
 author:
   name: Luiz Gustavo
   description: Técnico em Informática para Internet

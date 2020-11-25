@@ -6,7 +6,6 @@ export default function Home() {
     <>
       <Head>
         <title>Ingenium</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Menu />

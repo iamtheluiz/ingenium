@@ -173,7 +173,6 @@ export default function Article({ post }) {
     <>
       <Head>
         <title>{post.title}</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Menu />

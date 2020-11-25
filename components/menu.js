@@ -11,7 +11,7 @@ const Container = styled.div`
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 54px;
+  height: 64px;
   padding: 4px 8px;
 
   background-color: #000000;
@@ -19,6 +19,8 @@ const Container = styled.div`
   > a, img {
     width: auto;
     height: 100%;
+    padding: 4px;
+    cursor: pointer;
   }
   ul {
     color: white;
@@ -31,13 +33,19 @@ const Container = styled.div`
     text-decoration: none;
     color: white;
   }
+
+  @media (max-width: 675px) {
+    nav {
+      display: none;
+    }
+  }
 `;
 
 export default function Menu() {
   return (
     <Container>
       <Link href="/">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Google_Lens_-_new_logo.png/600px-Google_Lens_-_new_logo.png" alt="" />
+        <img src="/images/logo.png" alt="" />
       </Link>
 
       <nav>
@@ -56,6 +64,7 @@ export default function Menu() {
           </li>
         </ul>
       </nav>
+      
     </Container>
   )
 }

@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Menu from '../components/menu'
+import Footer from '../components/footer'
 import Date from '../components/date'
 import Link from 'next/link'
 import styled from 'styled-components'
@@ -9,7 +10,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 8px 32px;
-  padding-top: 70px;
+  padding-top: 84px;
 `
 
 const List = styled.ul`
@@ -29,7 +30,10 @@ const Item = styled.li`
   padding: 16px 0px;
 `
 
-const Left = styled.div``
+const Left = styled.div`
+  display: flex;
+  align-items: center;
+`
 
 const Image = styled.div`
   width: 300px;
@@ -42,7 +46,8 @@ const Image = styled.div`
 `;
 
 const Right = styled.div`
-  padding: 0px 16px;
+  padding-right: 16px;
+  flex: 1;
 
   a {
     color: #0070f3;
@@ -72,6 +77,10 @@ const Right = styled.div`
   div small {
     font-size: 15px;
   }
+
+  @media (max-width: 650px) {
+
+  }
 `
 
 export default function Article({ allPosts }) {
@@ -79,7 +88,6 @@ export default function Article({ allPosts }) {
     <>
       <Head>
         <title>Article | Ingenium</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <Menu />
@@ -107,6 +115,8 @@ export default function Article({ allPosts }) {
           ))}
         </List>
       </Container>
+
+      <Footer />
     </>
   )
 }
